@@ -499,7 +499,7 @@ color: #000;
 
 /* Item Page */
 .post-body{margin:0;padding:10px;font-size:14px;line-height:26px;box-sizing:border-box}
-.post-body img{max-width:100%;padding:10px 0;position:relative;margin:0 auto}
+.post-body img{max-width:100%;padding:10px 0;position:relative;margin:0 auto;border-radius:25px}
 .comment-link{white-space:normal}
 .postmarg{padding: 50px 0px !important;}
 .postmarg h3{font-size:36px;line-height:38px;padding: 10px 0px;font-weight: 600}
@@ -1021,7 +1021,7 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100%;
-height: 100%;
+border-radius: 20px;
 }
 .entry-content-container {
 z-index: 2;
@@ -1556,11 +1556,11 @@ body#layout .magplus-social h4{width: 100%;float: none;clear: left;display:table
                  <b:widget-settings>
                    <b:widget-setting name='displayUrl'>https://1.bp.blogspot.com/-ZAPClf96Ml4/XZVw_lrd6YI/AAAAAAAAql0/VI9mjeOuEOAtkAUiGMKUCnrgCiYAbXe5ACLcBGAsYHQ/s1600/menu.jpg</b:widget-setting>
                    <b:widget-setting name='displayHeight'>500</b:widget-setting>
-                   <b:widget-setting name='sectionWidth'>1000</b:widget-setting>
+                   <b:widget-setting name='sectionWidth'>1170</b:widget-setting>
                    <b:widget-setting name='useImage'>true</b:widget-setting>
                    <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
                    <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-                   <b:widget-setting name='displayWidth'>1000</b:widget-setting>
+                   <b:widget-setting name='displayWidth'>1170</b:widget-setting>
                  </b:widget-settings>
                  <b:includable id='main'>
                   <b:if cond='data:useImage'>
@@ -1646,7 +1646,7 @@ user is not using shrink to fit then we expand the header.
                 <b:widget-setting name='text-0'>Hoạt động</b:widget-setting>
                 <b:widget-setting name='link-2'>/search/label/Khác</b:widget-setting>
                 <b:widget-setting name='text-3'>Văn Nghệ</b:widget-setting>
-                <b:widget-setting name='link-0'>/search/label/Hoạt%20động%20Cựu%20Học%20sinh</b:widget-setting>
+                <b:widget-setting name='link-0'>/search/label/Hoạt%20Động%20Cựu%20Học%20Sinh</b:widget-setting>
                 <b:widget-setting name='text-2'>Tin khác</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main'>
@@ -1741,7 +1741,7 @@ user is not using shrink to fit then we expand the header.
             <b:section class='customwidgets' id='customwidget' name='Customized Widgets' preferred='no' showaddelement='yes'>
               <b:widget id='HTML993' locked='false' title='Hoạt động' type='HTML' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='content'><![CDATA[<object class='magplus-widget' data-label='Hoạt%20động%20Cựu%20Học%20sinh' data-type='list'></object>]]></b:widget-setting>
+                  <b:widget-setting name='content'><![CDATA[<object class='magplus-widget' data-label='Hoạt%20Động%20Cựu%20Học%20Sinh' data-type='list'></object>]]></b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
                   <!-- only display title if it's non-empty -->
@@ -2515,10 +2515,7 @@ user is not using shrink to fit then we expand the header.
 
                         </a></span><span class='entry-cats'><b:if cond='data:top.showPostLabels and data:post.labels'><span>&#160; in </span><b:loop values='data:post.labels' var='label'><a class='magplus-max-limit' expr:href='data:label.url' expr:title='&quot;View all posts in &quot; + data:label.name'><data:label.name/></a> <b:if cond='not data:label.isLast'>, </b:if></b:loop></b:if></span><span class='tw-button comment-count'><a expr:href='data:post.url + &quot;#comments&quot;' expr:title='data:post.numComments + &quot; comments&quot;'><data:post.numComments/> comments</a></span></div>
 
-                      <b:if cond='data:post.firstImageUrl'>
-                        <div class='entry-media single-media-thumb'><div class='tw-thumbnail'><div class='image-overlay'><a class='overlay-icon' expr:href='data:post.url' expr:title='data:post.title'><img expr:alt='data:post.title' expr:src='data:post.firstImageUrl'/></a></div></div></div>
-
-                      </b:if>
+                      
 
                       <div class='entry-content-container'>
                         <div class='entry-share vertical' data-id='95' expr:data-ajaxurl='data:blog.homepageUrl'>
@@ -2531,14 +2528,13 @@ user is not using shrink to fit then we expand the header.
                           </div>
                           <div class='share-toggle header'><i class='ion-plus-round'/><i class='ion-minus-round'/></div>
                         </div>  
-                        <div class='entry-content'> <div class='magplus-advertising'><a name='ad-post-top'/></div><div class='post-main-body post-body'><data:post.body/></div><div class='clearfix'/></div>       
+                        <div class='entry-content'><div class='post-main-body post-body'><data:post.body/></div><div class='clearfix'/></div>       
                       </div>
 
 
 
 
 
-                      <div class='magplus-advertising'><a name='ad-post-bottom'/><div class='clearfix blockpad'/></div>
                       <div class='clearfix'/>
 
                       <div class='post-footer'>
